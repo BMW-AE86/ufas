@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.png">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="styleHome.css">
+  <script defer src="./bundle.js"></script>
+  <style>
+.hidden {
+    display: none;
+}
+
+#login-success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    color: green;
+    animation: fadeIn 0.5s ease-in-out;
+    margin-top: 20px;
+}
+
+.checkmark {
+    font-size: 3em;
+    margin-bottom: 10px;
+    animation: scaleUp 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+  </style>
+</head>
+<body>
+    <div class="page-wrap">
+      <div class="sticky-nav">
+        <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="sidebar w-nav">
+          <div class="nav-container w-container">
+            <a href="index.html" aria-current="page" class="brand w-nav-brand w--current"><img src="img/Educare.svg" alt="" class="logo"></a>
+            <nav role="navigation" class="nav-menu w-nav-menu">
+              <a href="index.html" aria-current="page" class="navlink w-inline-block w--current"><img src="img/Home.svg" width="22" alt="" class="icon">
+                <div>Home</div>
+              </a>
+              <a href="Lesson.html" class="navlink w-inline-block"><img src="img/Document.svg" width="22" alt="" class="icon">
+                <div>Lessons</div>
+              </a>
+              <a href="Assignments.html" class="navlink w-inline-block"><img src="img/Calendar.svg" width="22" alt="" class="icon">
+                <div>Assignments</div>
+              </a>
+              <a href="News.html" class="navlink w-inline-block"><img src="img/Discovery.svg" width="22" alt="" class="icon">
+                <div>News</div>
+              </a>
+              <a href="AskQuestion.html" class="navlink w-inline-block"><img src="img/Message.svg" width="22" alt="" class="icon">
+                <div>Ask a question</div>
+              </a>
+            </nav>
+            <div class="menu-button w-nav-button">
+              <div class="menu-icon w-icon-nav-menu"><div class="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="content-wrap">
+
+
+        <nav role="navigation" class="nav-menu1 w-nav-menu">
+            <a href="index.html" aria-current="page" class="navlink w-inline-block w--current"><img src="img/Home.svg" width="22" alt="" class="icon">
+              <div>Home</div>
+            </a>
+            <a href="Lesson.html" class="navlink w-inline-block"><img src="img/Document.svg" width="22" alt="" class="icon">
+              <div>Lessons</div>
+            </a>
+            <a href="Assignments.html" class="navlink w-inline-block"><img src="img/Calendar.svg" width="22" alt="" class="icon">
+              <div>Assignments</div>
+            </a>
+            <a href="News.html" class="navlink w-inline-block"><img src="img/Discovery.svg" width="22" alt="" class="icon">
+              <div>News</div>
+            </a>
+            <a href="AskQuestion.html" class="navlink w-inline-block"><img src="img/Message.svg" width="22" alt="" class="icon">
+              <div>Ask a question</div>
+            </a>
+          </nav>
+
+
+        <div class="search">
+          <form action="#" data-w-id="7096e4cb-57fe-326d-4ae3-dbe8cd2e499f" class="search-component w-form"><input class="search-input w-input" maxlength="256" name="query" placeholder="Search…" data-w-id="7096e4cb-57fe-326d-4ae3-dbe8cd2e49a0" type="search" id="search" required=""><input style="opacity: 0.001;" type="submit" class="search-button w-button" value=""></form>
+          <div data-w-id="7096e4cb-57fe-326d-4ae3-dbe8cd2e49a2" class="search-icon"><img src="img/search.svg" width="71.5" alt="" data-w-id="7096e4cb-57fe-326d-4ae3-dbe8cd2e49a3" class="search-icon-open"><img src="img/close.svg" width="22" alt="" data-w-id="7096e4cb-57fe-326d-4ae3-dbe8cd2e49a4" class="search-icon-close"></div>
+        </div>
+        
+        <div class="content">
+          <div class="section">
+            <div class="section-title">Recent</div>
+            <div class="hero-grid" style="background-color: white;">
+              <div class="w-dyn-list">
+                <div role="list" class="w-dyn-items">
+                  <div role="listitem" class="card hero w-dyn-item">
+                    <div class="featured-image">
+                      <a href="lesson1.html" class="w-inline-block"><img width="100%" alt="" src="img/l111.png"></a>
+                    </div>
+                    <div class="featured-info">
+                      <a href="lesson1.html" class="category-link w-inline-block">
+                        <div class="category w-dyn-bind-empty">w3school</div>
+                      </a>
+                      <h1 class="card-title hero-title w-dyn-bind-empty">Getting started
+                        with W3school</h1>
+                      <a href="lesson1.html" class="author-info hero-author w-inline-block">
+                        <div class="avatar"><img alt="" src="img/ml.jpg" class="avatar w-dyn-bind-empty"></div>
+                        <div>by Aaron Kautzer</div>
+                      </a>
+                      <p class="w-dyn-bind-empty">Quod molestias repellat. Dignissimos
+                        soluta deleniti laudantium ab qui sit
+                        iste. Veniam debitis ut consequuntur.
+                        Nihil quia fugit iure maxime
+                        accusantium dolorem recusandae
+                        architecto iste.</p>
+                      <div class="button-wrapper align-left">
+                        <a href="Lesson.html" class="button w-button"><button type="button" class="btn btn-dark">VIEW LESSON</button></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section">
+            <h2 class="section-title">Lessons</h2>
+            <div class="w-dyn-list">
+              <div role="list" class="_3-col-grid w-dyn-items">
+                <div role="listitem" class="w-dyn-item">
+                  <div class="card lesson-card">
+                    <a href="lesson2.html" class="card-link image w-inline-block"><img width="100%" alt="" src="img/l11.png"></a>
+                    <div class="card-data lessons">
+                      <a href="lesson2.html" class="category-link w-inline-block">
+                        <div class="category w-dyn-bind-empty">LAYOUT</div>
+                      </a>
+                      <a href="lesson2.html" class="card-link w-inline-block">
+                        <h3 class="card-title w-dyn-bind-empty">Layout and
+                            structure</h3>
+                        <p class="w-dyn-bind-empty">Sed dignissim lacinia nunc.
+                            Curabitur tortor.
+                            Pellentesque nibh. Aenean
+                            quam. In scelerisque sem
+                            at dolor. Maecenas
+                            mattis.Sed dignissim
+                            lacinia nunc.</p>
+                      </a>
+                    </div>
+                    <a href="lesson2.html" class="author-info lesson-card w-inline-block">
+                      <div class="avatar"><img alt="" src="img/w.jpg" class="avatar w-dyn-bind-empty"></div>
+                      <div>by Betsy O'Reilly</div>
+                    </a>
+                  </div>
+                </div>
+
+                <div role="listitem" class="w-dyn-item">
+                    <div class="card lesson-card">
+                      <a href="lesson3.html" class="card-link image w-inline-block"><img width="100%" alt="" src="img/l2.png"></a>
+                      <div class="card-data lessons">
+                        <a href="lesson3.html" class="category-link w-inline-block">
+                          <div class="category w-dyn-bind-empty">HTML & CSS</div>
+                        </a>
+                        <a href="lesson3.html" class="card-link w-inline-block">
+                          <h3 class="card-title w-dyn-bind-empty">Classes and styles</h3>
+                          <p class="w-dyn-bind-empty">Sed convallis tristique sem.
+                            Proin ut ligula vel nunc
+                            egestas porttitor. Morbi
+                            lectus risus, iaculis vel,
+                            suscipit quis, luctus non,
+                            massa.</p>
+                        </a>
+                      </div>
+                      <a href="lesson3.html" class="author-info lesson-card w-inline-block">
+                        <div class="avatar"><img alt="" src="img/R.jpg" class="avatar w-dyn-bind-empty"></div>
+                        <div>by Haleigh Boyle</div>
+                      </a>
+                    </div>
+                  </div>
+                  <div role="listitem" class="w-dyn-item">
+                    <div class="card lesson-card">
+                      <a href="lesson5.html" class="card-link image w-inline-block"><img width="100%" alt="" src="img/l3.png"></a>
+                      <div class="card-data lessons">
+                        <a href="lesson5.html" class="category-link w-inline-block">
+                          <div class="category w-dyn-bind-empty">INTERACTIONS</div>
+                        </a>
+                        <a href="lesson5.html" class="card-link w-inline-block">
+                          <h3 class="card-title w-dyn-bind-empty">Intro to Interactions</h3>
+                          <p class="w-dyn-bind-empty">Nulla metus metus,
+                            ullamcorper vel, tincidunt
+                            sed, euismod in, nibh.
+                            Quisque volutpat
+                            condimentum velit. Class
+                            aptent taciti sociosqu.</p>
+                        </a>
+                      </div>
+                      <a href="lesson5.html" class="author-info lesson-card w-inline-block">
+                        <div class="avatar"><img alt="" src="img/OIPo.jpg" class="avatar w-dyn-bind-empty"></div>
+                        <div>by Jerod Macejkovic</div>
+                      </a>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="button-wrapper">
+                <a href="Lesson.html" class="button w-button"><button type="button" class="btn btn-dark">View all</button></a>
+            </div>
+          </div>
+          <div class="section">
+            <h2 class="section-title">Assignments</h2>
+            <div class="collection-list-wrapper w-dyn-list">
+              <div role="list" class="w-dyn-items">
+                <div role="listitem" class="w-dyn-item">
+                  <div class="card assignment">
+                    <div class="assignment-date"><img src="img/grey_calendar.svg" alt="" class="calendar-icon">
+                      <div class="date w-dyn-bind-empty" style="font-weight: 550;">jan</div>
+                    </div>
+                    <a href="#" class="card-info w-inline-block">
+                      <h3 class="card-title w-dyn-bind-empty">One page layout</h3>
+                      <div class="w-dyn-bind-empty">Create a one page layout for a business website.</div>
+                    </a>
+                  </div>
+
+                  <div class="card assignment">
+                    <div class="assignment-date"><img src="img/grey_calendar.svg" alt="" class="calendar-icon">
+                      <div class="date w-dyn-bind-empty" style="font-weight: 550;">feb</div>
+                    </div>
+                    <a href="#" class="card-info w-inline-block">
+                      <h3 class="card-title w-dyn-bind-empty">Create a Navbar Symbol</h3>
+                      <div class="w-dyn-bind-empty">Navbars are used in all project pages. Create a symbol and make some changes.</div>
+                    </a>
+                  </div>
+
+                  <div class="card assignment">
+                    <div class="assignment-date"><img src="img/grey_calendar.svg" alt="" class="calendar-icon">
+                      <div class="date w-dyn-bind-empty" style="font-weight: 550;">JUL</div>
+                    </div>
+                    <a href="#" class="card-info w-inline-block">
+                      <h3 class="card-title w-dyn-bind-empty">Add a page load animation</h3>
+                      <div class="w-dyn-bind-empty">Use Interactions to create an animation on the hero section.</div>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="button-wrapper">
+                <a href="Assignments.html" class="button w-button"><button type="button" class="btn btn-dark">View all</button></a>
+            </div>
+          </div>
+          <div class="section">
+            <h2 class="section-title">News</h2>
+            <div class="collection-list-wrapper w-dyn-list">
+              <div role="list" class="_3-col-grid w-dyn-items">
+                <div role="listitem" class="card news-card w-dyn-item">
+                  <div class="card-data no-margin">
+                    <a href="news1.html" class="category-link w-inline-block">
+                      <div class="category w-dyn-bind-empty"></div>
+                    </a>
+                    <a href="news1.html" class="card-link w-inline-block">
+                      <h3 class="card-title w-dyn-bind-empty">Planning the structure of a site</h3>
+                      <p class="w-dyn-bind-empty">Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.Vestibulum sapien. Proinquam. Etiam ultrices.</p>
+                    </a>
+                  </div>
+                  <a href="news1.html" class="author-info w-inline-block"><img alt="" src="img/1572550230747.jpg" class="avatar w-dyn-bind-empty">
+                    by Houssem Dhia Eddine
+                  </a>
+                </div>
+
+                <div role="listitem" class="card news-card w-dyn-item">
+                    <div class="card-data no-margin">
+                      <a href="news2.html" class="category-link w-inline-block">
+                        <div class="category w-dyn-bind-empty"></div>
+                      </a>
+                      <a href="news2.html" class="card-link w-inline-block">
+                        <h3 class="card-title w-dyn-bind-empty">codeNo</h3>
+                        <p class="w-dyn-bind-empty">Nam nec ante. Sed lacinia,
+                            urna non tincidunt mattis,
+                            tortor neque adipiscing
+                            diam, a cursus ipsum ante
+                            quis turpis.</p>
+                      </a>
+                    </div>
+                    <a href="news2.html" class="author-info w-inline-block"><img alt="" src="img/OIP (1).jpg" class="avatar w-dyn-bind-empty">
+                      by Mohamed Djaref
+                    </a>
+                  </div>
+
+                  <div role="listitem" class="card news-card w-dyn-item">
+                    <div class="card-data no-margin">
+                      <a href="news3.html" class="category-link w-inline-block">
+                        <div class="category w-dyn-bind-empty"></div>
+                      </a>
+                      <a href="news3.html" class="card-link w-inline-block">
+                        <h3 class="card-title w-dyn-bind-empty">Content stategy</h3>
+                        <p class="w-dyn-bind-empty">Quisque volutpat
+                            condimentum velit. Class
+                            aptent taciti sociosqu ad
+                            litora torquent per conubia
+                            nostra, per inceptos
+                            himenaeos.</p>
+                      </a>
+                    </div>
+                    <a href="news3.html" class="author-info w-inline-block"><img alt="" src="img/OIPo.jpg" class="avatar w-dyn-bind-empty">
+                      by mouad kadi
+                    </a>
+                  </div>
+                  
+              </div>
+            </div>
+            <div class="button-wrapper">
+              <a href="News.html" class="button w-button"><button type="button" class="btn btn-dark">View all</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; display: block;margin-left:auto;margin-right: auto;">
+        <h2>Do you want to receive notifications<br> of the lastest news and lessons</h2>
+        <form style="margin-left: auto;" id="email-form" name="email-form" data-name="Email Form" method="get" class="formEmail" data-wf-page-id="6617c795c6e40761642c401e" data-wf-element-id="0aa1ada3-a982-d17a-2620-2723e8ace3c6">
+          <input class="input hou" maxlength="100" style="width: 60%;text-align: center;" name="Aemail" data-name="Email" placeholder="Your email address" type="email" id="email" required>
+          <button type="submit" class="btn btn-dark">SUBMIT</button>
+      </form>
+
+    
+      </div>
+
+        <div class="footer">
+          <a href="https://www.univ-setif.dz/" style="margin-bottom:-70px ;" target="_blank" class="footer-link w-inline-block"><img src="img/fau.jpg" width="25" alt="" class="webflow">
+            <div>UFAS - Powered by Arras Houssem Dhia Eddine</div>
+          </a>
+          <br>
+          <hr style="width: 101%;border: 1px solid rgb(130, 22, 254);"><hr style="width: 101%; border: 1px solid rgb(89, 0, 255);">
+          <a href="PrivacyPolicy.html" target="_blank" style="margin-top:-70px ;" class="footer-link w-inline-block">
+            <div>Privacy Policy</div>
+          </a>
+          <a href="Terms.html" target="_blank" style="margin-top:-70px ;" class="footer-link w-inline-block">
+            <div>Terms of Use</div>
+          </a>
+          <a href="mailto:support-team@educare-ufas.online" target="_blank" style="margin-top:-70px ;" class="footer-link w-inline-block">
+            <div>Contact Us</div>
+          </a>
+        </div>
+
+        
+
+      </div>
+   
+    </div>
+    
+<!-- Notification Container -->
+<div id="notification" style="display:none; position: fixed; top: 0; width: 100%; background-color: #4CAF50; color: white; text-align: center; padding: 10px;">
+    Thank you for subscribing! You will now receive the latest news and lessons.
+</div>
+
+<script>
+document.getElementById('email-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission
+
+    // Show the notification
+    var notification = document.getElementById('notification');
+    notification.style.display = 'block';
+
+    // Optionally, hide the notification after a few seconds
+    setTimeout(function() {
+        notification.style.display = 'none';
+    }, 5000);
+
+    // Optionally, you can proceed to submit the form using AJAX or other methods
+});
+</script>
+    <script>
+      document.querySelector('.burger-menu').addEventListener('click', function() {
+          document.querySelector('.nav-menu1').classList.toggle('show');
+      });
+      </script>
+    <script>
+      window.embeddedChatbotConfig = {
+      chatbotId: "6NZI5JpJl5nDaFzhnc2eN",
+      domain: "www.chatbase.co"
+      }
+      </script>
+      <script
+      src="https://www.chatbase.co/embed.min.js"
+      chatbotId="6NZI5JpJl5nDaFzhnc2eN"
+      domain="www.chatbase.co"
+      defer>
+      </script>
+      <script>
+     document.getElementById('email-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Perform any necessary validation or processing here
+    const email = document.getElementById('email').value;
+    
+    // Simulate a successful submission (you would replace this with your actual logic)
+    const isSuccess = email.includes("@"); // Simple email validation
+
+    if (isSuccess) {
+        onEmailSubmitSuccess(); // Call the function to show the success animation
+    } else {
+        alert("Please enter a valid email address.");
+    }
+});
+
+function onEmailSubmitSuccess() {
+    document.getElementById('login-success').classList.remove('hidden');
+    
+    // Optionally, redirect or clear the form after the animation
+    setTimeout(() => {
+        document.getElementById('email-form').reset(); // Clear the form
+    }, 2000); // Adjust timing to match your animation
+}
+   </script>
+
+</body>
+</html>
